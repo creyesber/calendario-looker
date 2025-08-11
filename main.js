@@ -51,8 +51,9 @@ function render(root){
     const cell = document.createElement('div'); cell.className='cell';
     if (d.getMonth() !== state.monthCursor.getMonth()) cell.classList.add('muted');
     const key = ymd(d);
-    if (state.selection.has(key)) cell.classList.add('sel');
-    if (state.lastActive === key) cell.classList.add('active');
+    if (state.selection.has(key)) {
+    cell.classList.add('active'); // todos los seleccionados se ven igual
+  }
 
     const dot = document.createElement('div'); dot.className='dot'; dot.textContent = d.getDate();
     cell.appendChild(dot);
@@ -143,3 +144,4 @@ const root = document.getElementById('root');
 if (window.lookerStudio?.on){ lookerStudio.on('data', onData); lookerStudio.on('style', onData); }
 else if (window.dscc?.subscribeToData){ dscc.subscribeToData(onData, {transform:'table'}); }
 else { onData({ fields:{ ds:{ dimensions:[{id:'date_dim'}] } }, style:{} }); }
+
