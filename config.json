@@ -1,0 +1,32 @@
+{
+  "data": {
+    "datasets": [
+      {
+        "id": "ds",
+        "label": "Datos",
+        "dimensions": [
+          {
+            "id": "date_dim",
+            "label": "Fecha (YYYY-MM-DD)",
+            "type": "TEXT"
+          }
+        ],
+        "metrics": []
+      }
+    ]
+  },
+  "style": {
+    "selectionMode": {
+      "label": "Modo de selección",
+      "type": "SELECT_SINGLE",
+      "options": [
+        { "label": "Día", "value": "day" },
+        { "label": "Semana", "value": "week" },
+        { "label": "Mes", "value": "month" },
+        { "label": "Rango", "value": "range" }
+      ],
+      "defaultValue": "range"
+    }
+  },
+  "interactions": { "supported": ["FILTER"] }
+}
