@@ -2,14 +2,12 @@
   "name": "Calendario Selector",
   "organization": "creyesber",
   "description": "Calendario de pared con selección de rango/día/semana/mes que envía filtros al informe.",
-  "logoUrl": "https://creyesber.github.io/calendario-looker/logo.png",
   "packageUrl": "https://creyesber.github.io/calendario-looker/",
   "components": [
     {
       "id": "calendar_range",
       "name": "Calendario (selector de fechas)",
       "description": "Selecciona días, semanas, meses o un rango y filtra el informe.",
-      "iconUrl": "https://creyesber.github.io/calendario-looker/logo.png",
       "resource": {
         "js": "https://creyesber.github.io/calendario-looker/index.js",
         "config": "https://creyesber.github.io/calendario-looker/config.json"
@@ -17,3 +15,4 @@
     }
   ]
 }
+
