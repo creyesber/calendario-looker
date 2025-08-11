@@ -26,7 +26,8 @@
       border-radius:999px;
     }
     /* Selección suave (fechas adicionales) */
-    .cell.sel .dot{ background: var(--accent-soft); }
+    /* .cell.sel .dot{ background: var(--accent-soft); } */
+    .cell.active .dot{ background: var(--accent); color: white; }
     /* Día activo (último clic) */
     .cell.active .dot{ background: var(--accent); color: white; }
     /* Enfoque al pasar */
@@ -40,3 +41,4 @@
   <script src="main.js"></script>
 </body>
 </html>
+
