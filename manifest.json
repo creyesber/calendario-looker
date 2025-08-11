@@ -10,10 +10,11 @@
       "name": "Calendario (selector de fechas)",
       "description": "Selecciona días, semanas, meses o un rango y filtra el informe.",
       "iconUrl": "https://creyesber.github.io/calendario-looker/logo.png",
-      "resource": {
+      "resources": {
         "js": "https://creyesber.github.io/calendario-looker/index.js",
         "config": "https://creyesber.github.io/calendario-looker/config.json"
       }
     }
   ]
 }
+
