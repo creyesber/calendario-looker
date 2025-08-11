@@ -1,40 +1,19 @@
 {
-  "data": {
-    "datasets": [
-      {
-        "id": "ds",
-        "label": "Datos",
-        "dimensions": [
-          {
-            "id": "date_dim",
-            "label": "Fecha (YYYY-MM-DD)",
-            "type": "TEXT"
-          }
-        ],
-        "metrics": []
+  "name": "Calendario Selector",
+  "organization": "creyesber",
+  "description": "Calendario de pared con selección de rango/día/semana/mes que envía filtros al informe.",
+  "logoUrl": "https://creyesber.github.io/calendario-looker/logo.png",
+  "packageUrl": "https://creyesber.github.io/calendario-looker/",
+  "components": [
+    {
+      "id": "calendar_range",
+      "name": "Calendario (selector de fechas)",
+      "description": "Selecciona días, semanas, meses o un rango y filtra el informe.",
+      "iconUrl": "https://creyesber.github.io/calendario-looker/logo.png",
+      "resource": {
+        "js": "https://creyesber.github.io/calendario-looker/index.js",
+        "config": "https://creyesber.github.io/calendario-looker/config.json"
       }
-    ]
-  },
-  "style": {
-    "selectionMode": {
-      "label": "Modo de selección",
-      "type": "SELECT_SINGLE",
-      "options": [
-        { "label": "Día", "value": "day" },
-        { "label": "Semana", "value": "week" },
-        { "label": "Mes", "value": "month" },
-        { "label": "Rango", "value": "range" }
-      ],
-      "defaultValue": "day"
-    },
-    "allowMulti": {
-      "label": "Permitir multiselección",
-      "type": "CHECKBOX",
-      "defaultValue": true
     }
-  },
-  "interactions": { "supported": ["FILTER"] },
-  "logoUrl": "https://dummyimage.com/48x48/eee/aaa.png&text=Cal",
-  "name": "Calendario (pared) – selector de fechas",
-  "description": "Calendario mensual con selección de días/semanas/meses que filtra el informe."
+  ]
 }
