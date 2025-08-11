@@ -34,6 +34,17 @@
     .cell:hover { outline: 2px solid var(--light); }
     .toolbar{ display:flex; justify-content:flex-end; margin-top:8px; }
     .clear{ border:none; background:transparent; color:var(--muted); cursor:pointer; font-size:12px; }
+
+    /* Rango (dentro del rango seleccionado) */
+  .cell.inrange .dot{ background: var(--accent-soft); }
+
+  /* Extremos del rango (inicio y fin) */
+  .cell.endpoint .dot{ background: var(--accent); color: white; }
+
+  /* (Opcional) elimina clases antiguas si las tenías: */
+  /* .cell.sel .dot{ background: var(--accent-soft); } */
+  /* .cell.active .dot{ background: var(--accent); color:white; } */
+
   </style>
 </head>
 <body>
@@ -41,4 +52,5 @@
   <script src="main.js"></script>
 </body>
 </html>
+
 
